@@ -1,0 +1,79 @@
+/* src/styles/ServicePlans.css */
+
+:root {
+    --background-color: #f5f5f5;
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --button-background: #007bff;
+    --button-text: #ffffff;
+    --button-active-background: #28a745; /* Green for active tab */
+    --tab-border-color: #ced4da;
+  }
+  
+  .service-plans-container {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 100%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the container horizontally */
+    text-align: center; /* Center the text and buttons */
+  }
+  
+  .heading {
+    font-weight: bold;
+    color: var(--heading-color);
+    margin-bottom: 20px;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .tab-button {
+    background-color: var(--button-background);
+    color: var(--button-text);
+    border: 1px solid var(--tab-border-color);
+    border-radius: 4px 4px 0 0;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    flex: 1; /* Ensure buttons fill the available space */
+    margin: 0 5px; /* Space between tabs */
+  }
+  
+  .tab-button.active {
+    background-color: var(--button-active-background);
+    border-bottom: 1px solid transparent; /* Hide border on active tab */
+    transform: scale(1.05);
+  }
+  
+  .tab-button:hover {
+    background-color: var(--button-active-background);
+  }
+  
+  .tab-content {
+    background: #f5f5f5;
+    border: 1px solid var(--tab-border-color);
+    border-radius: 0 0 8px 8px;
+    padding: 20px;
+  }
+  
+  .plans-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+  
+  .plan-card {
+    background: #ffffff;
+    border: 1px solid var(--tab-border-color);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
